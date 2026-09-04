@@ -14,7 +14,7 @@
 // This deliberately does NOT fork. Forking is the heavyweight case -- use a
 // real fork when you want to *branch*, use /btw when you just want to ask.
 //
-// Options (tui.json -> ["./tui-plugin/btw.js", { ... }]):
+// Options (tui.json -> ["opencode-aside", { ... }]):
 //   context_chars  how much recent transcript text to include  (default 6000)
 //   tool_chars     per-tool-call cap on command + output text  (default 600)
 //   system         override the side-question system prompt
@@ -68,7 +68,7 @@ function toolsOf(parts, budget) {
 }
 
 export default {
-  id: "btw",
+  id: "opencode-aside",
   tui: async (api, options) => {
     const config = { ...DEFAULTS, ...(options ?? {}) }
 
