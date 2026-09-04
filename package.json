@@ -1,12 +1,27 @@
 {
   "name": "opencode-aside",
   "version": "0.1.0",
-  "description": "One-shot side questions in an overlay, a port of Claude Code's /btw",
+  "description": "Claude Code's /btw side chat for opencode - ask a one-shot question in an overlay, with no tools and nothing added to the transcript",
   "license": "MIT",
   "type": "module",
-  "keywords": ["opencode", "opencode-plugin", "tui"],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode-tui",
+    "tui",
+    "claude-code",
+    "btw",
+    "side-chat",
+    "sidechat",
+    "aside",
+    "side-question",
+    "ephemeral"
+  ],
   "exports": {
     "./tui": "./index.js"
   },
-  "files": ["index.js", "README.md"]
+  "files": [
+    "index.js",
+    "README.md"
+  ]
 }

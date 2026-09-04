@@ -3,8 +3,23 @@
 A port of Claude Code's `/btw` for opencode: ask a question about the session you are in,
 get the answer in an overlay, and have none of it enter the transcript.
 
-Named `opencode-aside` because `opencode-btw` and `opencode-bytheway` are both taken on
-npm by unrelated packages. The command is still `/btw`, with `/aside` as an alias.
+The command is `/btw`, with `/aside` as an alias. The package is named `opencode-aside`
+because `opencode-btw` is taken by an unrelated package.
+
+## How this differs from the alternatives
+
+Several plugins cover nearby ground. The distinction that matters is whether your side
+question **forks a session** and whether anything **persists**:
+
+| | Forks? | Persists? | Tools? |
+|---|---|---|---|
+| **opencode-aside** (this) | no | no — the child session is deleted | no |
+| `opencode-bytheway` | yes, forks and switches you into it | until you `/btw-end` or `/btw-merge` | yes |
+| `opencode-sidechat` | no | yes — a panel with history | yes |
+
+Claude Code's own `/btw` is a side chain: no tools, nothing persisted, gone when you close
+it, main transcript untouched. This plugin matches that. Pick `bytheway` if you actually
+want to *branch* and merge text back; pick `sidechat` if you want a persistent panel.
 
 ## Install
 
