@@ -1,0 +1,12 @@
+{
+  "name": "opencode-aside",
+  "version": "0.1.0",
+  "description": "One-shot side questions in an overlay, a port of Claude Code's /btw",
+  "license": "MIT",
+  "type": "module",
+  "keywords": ["opencode", "opencode-plugin", "tui"],
+  "exports": {
+    "./tui": "./index.js"
+  },
+  "files": ["index.js", "README.md"]
+}
