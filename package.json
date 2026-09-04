@@ -1,6 +1,6 @@
 {
   "name": "opencode-aside",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Claude Code's /btw side chat for opencode - ask a one-shot question in an overlay, with no tools and nothing added to the transcript",
   "license": "MIT",
   "type": "module",
@@ -36,5 +36,8 @@
   "homepage": "https://github.com/tannerbruhn/opencode-aside#readme",
   "bugs": {
     "url": "https://github.com/tannerbruhn/opencode-aside/issues"
+  },
+  "engines": {
+    "opencode": ">=1.18.18"
   }
 }

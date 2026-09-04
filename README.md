@@ -82,3 +82,7 @@ already in flight.
 Measured on one such setup, an interleaved `/btw` did **not** cost the agent its prompt
 cache (a long prompt still hit cache afterwards: 1.1s, versus 9.5s cold). That depends on
 server version and cache settings, so re-check it on your own hardware if it matters.
+
+## Requirements
+
+OpenCode 1.18.18 or newer (the TUI plugin API with dialogs and session client access).
