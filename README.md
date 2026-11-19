@@ -85,4 +85,4 @@ server version and cache settings, so re-check it on your own hardware if it mat
 
 ## Requirements
 
-OpenCode 1.18.18 or newer (the TUI plugin API with dialogs and session client access).
+OpenCode 1.18.18 or newer (the TUI plugin API with dialogs and session client access). Tested on 1.19.6.
